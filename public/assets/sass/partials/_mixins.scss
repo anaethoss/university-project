@@ -1,0 +1,21 @@
+@mixin transition($property,$time,$transition) {
+  transition:$property $time $transition;
+  -webkit-transition:$property $time $transition;
+  -o-transition:$property $time $transition;
+}
+
+@mixin translate($xAxis,$yAxis){
+  transform: translate($xAxis, $yAxis);
+  -webkit-transform: translate($xAxis, $yAxis);
+  -moz-transform: translate($xAxis, $yAxis);
+  -o-transform: translate($xAxis, $yAxis);
+  -ms-transform: translate($xAxis, $yAxis);
+}
+
+@mixin ellipsis($no-wrap: true) {
+  @if $no-wrap {
+    white-space: nowrap;
+  }
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

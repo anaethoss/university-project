@@ -1,0 +1,136 @@
+.pricing-tables{
+  padding:15px 0;
+  margin:-2px;
+  .pricing{
+	float:left;
+	width:25%;
+	padding:2px;
+	@media(max-width:1020px){
+	  width:50%;
+	}
+	@media(max-width:767px){
+	  float:none;
+	  width:100%;
+	}
+	table{
+	  background:$white;
+	  width:100%;
+	  text-align:center;
+	  position:relative;
+	  z-index:5;
+	  span.plan{
+		position:absolute;
+		left:0;
+		top:0;
+		bottom:30px;
+		width:30px;
+		background:$c6;
+		color:$white;
+		text-align:center;
+		text-transform:uppercase;
+		span{
+		  position:absolute;
+		  left:0;
+		  top:50%;
+		  -webkit-transform:translate(0, -50%); -moz-transform:translate(0, -50%); -ms-transform:translate(0, -50%); -o-transform:translate(0, -50%); transform:translate(0, -50%);
+		  width:100%;
+		  font-size:10px;
+		  font-weight:600;
+		  word-wrap: break-word;
+		  letter-spacing:1px;
+		  padding:10px;
+		}
+	  }
+	  a.btn{
+		display:block;
+		padding:15px;
+		border:2px solid $terColor;
+		text-transform:uppercase;
+		color:$tc-default;
+	  }
+	  tr td{
+		padding:10px 45px;
+		position:relative;
+	  }
+	  thead{
+		td{
+		  padding:30px 45px 0;
+		  hr{
+			margin-top:30px;
+			margin-bottom:30px;
+		  }
+		}
+		position:relative;
+		font-size:60px;
+		color:$tc-sec;
+		sup{
+		  font-weight:300;
+		  color:$tc-default;
+		  font-size:40px;
+		}
+		sub{
+		  font-size:20px;
+		  color:$tc-default;
+		  font-weight:400;
+		}
+	  }
+	  tbody{
+		font-size:13px;
+		text-transform:capitalize;
+	  }
+	  tfoot{
+		td{
+		  padding:30px 45px;
+		}
+	  }
+	  &:hover{
+		z-index:10;
+		-webkit-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.14); -moz-box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.14); box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.14);
+	  	a.btn{
+		  background:$c6;
+		  color:$white;
+		  border-color:$c6;
+		}
+	  }
+
+	}
+
+	&:nth-child(2){
+	  span.plan{
+		background:$c2;
+	  }
+	  &:hover table{
+		a.btn{
+		  background:$c2;
+		  border-color:$c2;
+		}
+	  }
+	}
+
+	&:nth-child(3){
+	  span.plan{
+		background:$c24;
+	  }
+	  &:hover table{
+		a.btn{
+		  background:$c24;
+		  border-color:$c24;
+		}
+	  }
+	}
+
+	&:nth-child(4){
+	  span.plan{
+		background:$c4;
+	  }
+	  &:hover table{
+		a.btn{
+		  background:$c4;
+		  border-color:$c4;
+		}
+	  }
+	}
+
+
+  }
+}

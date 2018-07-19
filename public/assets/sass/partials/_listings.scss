@@ -1,0 +1,102 @@
+.listing-area{
+  margin-bottom:100px;
+}
+.listing-filters{
+  width:300px;
+  padding-right:30px;
+  float:left;
+  @media (max-width:767px) {
+	display:none;
+  }
+}
+.items-list{
+  margin-left:300px;
+  @media (max-width:767px) {
+	margin-left:0;
+  }
+}
+.listing-filter-block{
+  background:$white;
+  margin-bottom:10px;
+  padding:0 20px;
+  header{
+	position:relative;
+	padding:20px 0;
+	h1,h2,h3,h4,h5,h6{
+	  margin:0;
+	}
+	a{
+	  color:$secColor;
+	  width:52px;
+	  text-align:center;
+	  position:absolute;
+	  right:-20px;
+	  top:0;
+	  height:100%;
+	  i{
+		position:absolute;
+		left:0;
+		width:100%;
+		text-align:center;
+		top:50%;
+		line-height:0;
+	  }
+	}
+  }
+  .inner{
+	padding-bottom:20px;
+  }
+  .filter-options-widget{
+	ul{
+	  margin:0 -20px;
+	  padding:0;
+	  li{
+		display:block;
+		a{
+		  display:block;
+		  padding:10px 25px 10px 45px;
+		  position:relative;
+		  color:inherit;
+		  text-decoration:none;
+		  &:hover{
+			background:$fvColor;
+			color:$tc-sec;
+		  }
+		  i{
+			border:1px solid $terColor;
+			background:$white;
+			width:16px;
+			height:16px;
+			border-radius:50%;
+			position:absolute;
+			left:20px;
+			top:12px;
+			color:$priColor;
+			display:block;
+			&:before{
+			  position:absolute;
+			  left:0;
+			  top:0;
+			  width:100%;
+			  height:100%;
+			  line-height:15px;
+			  content:"";
+			  font-family:"FontAwesome";
+			  font-size:8px;
+			  text-align:center;
+			}
+		  }
+		}
+		&.active{
+		  i:before{
+			content:"\f00c";
+		  }
+		  a{
+			background:$fvColor;
+			color:$tc-sec;
+		  }
+		}
+	  }
+	}
+  }
+}

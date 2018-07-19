@@ -1,0 +1,131 @@
+.nt-tab-triggers{
+  ul{
+	margin:0;
+	padding:0;
+	li{
+	  display:block;
+	  border-right:1px solid $bg-default;
+	  &.active{
+		border-right:none;
+	  }
+	  & + li{
+		border-top:1px solid $bg-default;
+	  }
+	  a{
+		background:$fvColor;
+		display:block;
+		padding:20px 20px 20px 80px;
+		position:relative;
+		text-decoration:none;
+		font-size:14px;
+		color:inherit;
+		text-transform:capitalize;
+		span{
+		  font-size:18px;
+		  width:60px;
+		  height:100%;
+		  position:absolute;
+		  left:0;
+		  top:0;
+		  background:$white;
+		  text-align:center;
+		  i{
+			position:absolute;
+			left:0;
+			top:50%;
+			line-height:0;
+			width:100%;
+		  }
+		}
+	  }
+	  &.active a{
+		color:$tc-sec;
+		background:$white;
+		.uzr-dashboard &{
+		  background:$fvColor;
+		}
+	  }
+	  a:hover span,&.active a span{
+		background:$priColor;
+		color:$white;
+	  }
+	}
+  }
+  @media (max-width:992px) {
+	display:none;
+  }
+}
+
+a.tab-accordion-trigger{
+  background:$white;
+  display:block;
+  padding:20px 20px 20px 80px;
+  position:relative;
+  text-decoration:none;
+  font-size:14px;
+  color:inherit;
+  text-transform:capitalize;
+  border-bottom:1px solid $fvColor;
+  span{
+	font-size:18px;
+	width:60px;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	background:$white;
+	text-align:center;
+	i{
+	  position:absolute;
+	  left:0;
+	  top:50%;
+	  line-height:0;
+	  width:100%;
+	}
+  }
+}
+.tab-panel{
+  display:none;
+  &.mob-active{
+	a.tab-accordion-trigger{
+	  background:$priColor;
+	  color:$white;
+	  span{
+		background:$priColor;
+		color:$white;
+	  }
+	}
+  }
+  &.active{
+	display:block;
+  }
+  a.tab-accordion-trigger{
+	display:none;
+  }
+  @media (max-width:992px) {
+	display:block !important;
+	& > header,& > .inner{
+	  display:none;
+	}
+	&.mob-active > .inner{
+	  display:block;
+	}
+	a.tab-accordion-trigger{
+	  display:block;
+	}
+	& > .text-widget{
+	  display:none;
+	}
+	&.mob-active > .text-widget{
+	  display:block;
+	  border-bottom:1px solid #f4f4f4;
+	}
+  }
+}
+
+.tabs-row{
+  margin:0;
+  .col-xs-12{
+	padding:0;
+  }
+}

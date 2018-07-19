@@ -1,0 +1,32 @@
+.tooltip{
+  display:none;
+  position:absolute;
+  bottom:100%;
+  margin-bottom:16px;
+  background:$black;
+  background:$black-80;
+  padding:8px !important;
+  line-height:normal !important;
+  white-space: nowrap;
+  min-width:90px;
+  left:50%;
+  color:$white;
+  font-size:11px;
+  font-family:"Open Sans",sans-serif;
+  -webkit-transform:translate(-50%, 0); -moz-transform:translate(-50%, 0); -ms-transform:translate(-50%, 0); -o-transform:translate(-50%, 0); transform:translate(-50%, 0);
+  &:before{
+	content:"\f0d7";
+	position:absolute;
+	font-family:"FontAwesome";
+	color:$black-80;
+	left:50%;
+	margin-left:-8px;
+	top:100%;
+	line-height:5px;
+	font-size:24px;
+  }
+  .tooltip-parent:hover &{
+	display:block;
+	z-index:500;
+  }
+}

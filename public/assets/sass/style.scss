@@ -1,0 +1,110 @@
+/*==============================
+ *Table oF Content
+ ===============================
+ 1) Default Settings
+ 2) General Styles
+ 3) CSS Transitions
+ 4) Documentation Header
+ 5) Dropdown
+ 6) Section Headings
+ 7) Category Boxes
+ 8) Text Widgets
+ 9) Call to Actions
+ 10) SocialLinks
+ 11) Breadcrumbs
+ 12) Listing Actions on archive pages of shop and ads
+ 13) Search Widget
+ 14) Range Widget
+ 15) Archive/Listing of Ads
+ 16) Ads
+ 17) Ads Single Page
+ 18) Info List
+ 19) Info element with icons
+ 20) Tooltip
+ 21) Email Alerts ( subscription form )
+ 22) Widgets
+ 23) Buttons
+ 24) Form Elements
+ 25) Dashboard
+ 26) Tabs
+ 27) Info Box
+ 26) Accordion with Radio box
+ 27) Progressbar
+ 28) Slick Slider
+ 29) Icon boxes
+ 30) Teams
+ 31) Testimonials
+ 32) Two Column area to show different features for buyers and sellers
+ 33) Blog
+ 34) Default Accordion
+ 35) Hero Banners
+ 36) Category boxes with thumbnail
+ 37) Pricing Tables
+ 38) Cart
+ 39) Subscribe
+ 40) Gallery Slider
+ 41) General Stylings of Shop pages
+ 42) Modals
+ 43) Mobile Menu
+ 44) Sliding nav
+ 45) Alerts
+ 46) Footer
+
+ ================================================*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,400italic,700);
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/bootstrap-custom";
+@import "partials/setting";
+@import "partials/general";
+@import "partials/set-transition";
+@import "partials/header";
+@import "partials/dropdown";
+@import "partials/headings";
+@import "partials/boxes";
+@import "partials/text-widget";
+@import "partials/call-to-action";
+@import "partials/social-media";
+@import "partials/breadcrumbs";
+@import "partials/listing-actions";
+@import "partials/search-widget";
+@import "partials/range-widget";
+@import "partials/listings";
+@import "partials/ads";
+@import "partials/item-single";
+@import "partials/info-list";
+@import "partials/info-icons";
+@import "partials/tooltip";
+@import "partials/email-alerts";
+@import "partials/widgets";
+@import "partials/buttons";
+@import "partials/form";
+@import "partials/dashboard";
+@import "partials/tabs";
+@import "partials/info-card";
+@import "partials/radio-accordion";
+@import "partials/progressbars";
+@import "partials/slick-setting";
+@import "partials/icons-with-text";
+@import "partials/team";
+@import "partials/testimonials";
+@import "partials/twoways";
+@import "partials/blog";
+@import "partials/accordions";
+@import "partials/main-banners";
+@import "partials/category-thumbs";
+@import "partials/pricing";
+@import "partials/cart";
+@import "partials/subscribe-2";
+@import "partials/gallery-slider";
+@import "partials/shop";
+@import "partials/modals";
+@import "partials/mobile-menu";
+@import "partials/sliding-nav";
+@import "partials/alerts";
+@import "partials/footer";
+@import "partials/demo-page";
+
+.web-app{
+  min-height:500px;
+}

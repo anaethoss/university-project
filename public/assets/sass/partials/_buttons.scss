@@ -1,0 +1,121 @@
+.btn{
+  position:relative;
+  display:inline-block;
+  padding:10px 20px;
+  text-decoration:none !important;
+  font-size:$fs-small;
+  font-weight:700;
+  border:none;
+  border-radius: 0;
+  text-transform:uppercase;
+  &.block-element{
+    text-align:center;
+  }
+}
+.buttons-demo div.demo-div{
+  margin-bottom:20px;
+  .btn {
+    &.btn-transparent,&.btn-transparent-2 {
+      margin:-2px;
+    }
+  }
+}
+.btn-blue{
+  background:$priColor;
+  color:$white;
+  &:hover{
+    background:$secColor;
+    color:$white;
+  }
+}
+.btn-small{
+  padding:12px 30px;
+}
+.btn-medium{
+  padding:12px 45px;
+}
+.btn-large{
+  padding:20px 70px;
+}
+.btn-xl{
+  padding:24px 85px;
+}
+.btn-fw-normal{
+  font-weight:400 !important;
+}
+.btn.danger-hover:hover{
+  background:$c12;
+  color:$white;
+}
+.btn-grey{
+  color:$tc-default;
+  background:$fvColor;
+}
+.btn-dark-grey{
+  color:$tc-default;
+  background:#d2d2d2;
+}
+.btn-md{
+  padding:20px 40px;
+}
+.btn-white{
+  background:$white;
+  color:$c16;
+  &:hover{
+    background:$priColor;
+    color:$white;
+  }
+}
+.btn-black{
+  background:#151515;
+  color:#fff;
+  &:hover{
+    background:$priColor;
+    color:$white;
+  }
+}
+
+
+.btn-yellow{
+  background:$c3;
+  color:$white;
+  &:hover{
+    background:$secColor;
+    color:$white;
+  }
+}
+
+.btn-green{
+  background:$secColor;
+  color:$white;
+  &:hover{
+    background:$priColor;
+    color:$white;
+  }
+}
+.btn-transparent{
+  border:2px solid $terColor;
+  color:$c16;
+  &:hover{
+    background:$priColor;
+    color:$white;
+    border-color:$priColor;
+  }
+}
+.btn-transparent-2{
+  border:2px solid #151515;
+  color:#151515;
+  &:hover{
+    background:$priColor;
+    color:$white;
+    border-color:$priColor;
+  }
+}
+a.link{
+  text-decoration:underline;
+}
+
+.danger-hover:hover{
+  background:$c12 !important;
+  color:$white !important;
+}

@@ -1,0 +1,54 @@
+.text-widget{
+  position:relative;
+  line-height:28px;
+  .inner{
+	background:$white;
+	padding:20px 40px 40px;
+	@media(max-width:767px){
+	  padding:20px;
+	}
+	.tabs-row &{
+	  padding-bottom:38px;
+	  padding-top:1px;
+	}
+	.uzr-panel &{
+	  padding:0;
+	  background:none;
+	}
+	p{
+	  margin:30px 0 0;
+	}
+	hr{
+	  margin:40px 0;
+	}
+	h6{
+	  color:$tc-sec;
+	}
+  }
+}
+.contextual-page .text-widget{
+  h2,h3,h4,h5,h6{
+	margin:30px 0;
+  }
+}
+.caret-right-list{
+  margin:10px 0;
+  padding:0;
+  li{
+	display:block;
+	padding-left:22px;
+	line-height:28px;
+	position:relative;
+	&:before{
+	  content:"\f0da";
+	  font-family:"FontAwesome";
+	  width:22px;
+	  text-align:center;
+	  top:2px;
+	  left:0;
+	  position:absolute;
+	  color:$priColor;
+	  font-size:16px;
+	}
+  }
+}

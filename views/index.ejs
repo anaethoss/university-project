@@ -1,11 +1,75 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<% include partials/header %>
+
+  <div class="main-banner imgAsBg hero-banner">
+    <img src="assets/img/banner.jpg" alt="dummy">
+    <div class="inner">
+      <div class="container">
+        <header>
+          <h2>Buy & Sell Used Books</h2>
+          Search Books Here to find the book you want
+        </header>
+        <div class="category-search-tabbed">
+
+          <div class="search-widget">
+            <input type="text" placeholder="Search your book here">
+            <button type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section style2">
+    <div class="container">
+      <header class="heading big text-center">
+        <h1>Recently Added Books</h1>
+      </header>
+
+      <div class="featured-items row">
+
+        <div class="col-xs-12 col-sm-4">
+          <div class="item-thumb">
+            <img src="http://placehold.it/340x240" alt="">
+            <h3>Some fancy title here</h3>
+            <div class="basic-info">
+              <span>
+                <sup>৳</sup>201.06</span>
+              <span class="cat bg1">Mobiles</span>
+            </div>
+            <a href="/single-book">Open details</a>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4">
+          <div class="item-thumb">
+            <img src="http://placehold.it/340x240" alt="">
+            <h3>Some fancy title here</h3>
+            <div class="basic-info">
+              <span>
+                <sup>৳</sup>201.06</span>
+              <span class="cat bg1">Mobiles</span>
+            </div>
+            <a href="/single-book">Open details</a>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4">
+          <div class="item-thumb">
+            <img src="http://placehold.it/340x240" alt="">
+            <h3>Some fancy title here</h3>
+            <div class="basic-info">
+              <span>
+                <sup>৳</sup>201.06</span>
+              <span class="cat bg1">Mobiles</span>
+            </div>
+            <a href="/single-book">Open details</a>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+
+  <% include partials/footer %>

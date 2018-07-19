@@ -1,0 +1,141 @@
+.call-to-action{
+  position:relative;
+  font-weight:600;
+
+  header{
+	padding-top:60px;
+	@media (max-width:992px) {
+	  padding-top:0;
+	}
+	h2,h3,h4,h5,h6{
+	  font-weight:700;
+	  margin-top:0;
+	}
+  }
+  @media (max-width:767px) {
+	padding-top:20px;
+	& .pull-right{
+	  float:none !important;
+	}
+  }
+  .action-mock{
+	text-align:right;
+	@media (max-width:767px) {
+	  text-align:left;
+	}
+
+  }
+  .inner{
+	padding-top:10px;
+  }
+  .app-store{
+	text-decoration:none;
+	color:inherit;
+	display:block;
+	position:relative;
+	padding-left:60px;
+	@media (max-width:767px) {
+	  margin-bottom:20px;
+	  padding-left:0;
+	}
+	img{
+	  position:absolute;
+	  left:0;
+	  top:0;
+	  @media (max-width:767px) {
+		position:relative;
+		display:block;
+		margin-bottom:5px;
+	  }
+	}
+	h4{
+	  font-size:18px;
+	  @media (max-width:992px) {
+		font-size:10px;
+	  }
+	  @media (max-width:767px) {
+		font-size:12px;
+	  }
+	  @media (max-width:480px) {
+		font-size:9px;
+	  }
+	}
+	h3,h4,h5{
+	  margin-top:0;
+	}
+	span{
+	  text-transform:uppercase;
+	  font-size:10px;
+	  @media (max-width:960px) {
+		font-size:8px;
+	  }
+	  @media (max-width:400px) {
+		display:none;
+	  }
+	}
+  }
+}
+.call-to-action-2{
+  & > .inner{
+	padding:40px 200px 40px 40px;
+	background:$white;
+	position:relative;
+	& > a.btn{
+	  position:absolute;
+	  right:40px;
+	  top:45px;
+	  @media(max-width:767px){
+		position:relative;
+		right:auto;
+		top:auto;
+	  }
+	}
+	@media(max-width:767px){
+	  padding:20px;
+	}
+  }
+
+}
+.call-to-action-3{
+  border-top:2px solid $bg-default;
+  &.style2{
+	background:$white;
+	.inner{
+	  padding-left:0;
+	  padding-right:0;
+	}
+  }
+  .inner{
+	position:relative;
+	padding:50px 70px;
+	strong{
+	  margin-top:6px;
+	  font-size:24px;
+	  display:inline-block;
+	  color:$tc-sec;
+	}
+	a.btn{
+	  padding:14px 20px;
+	  @media (max-width:767px) {
+		margin-top:20px;
+	  }
+	}
+	.counter{
+	  float:left;
+	  margin-right:30px;
+	  & > span{
+		width:34px;
+		height:44px;
+		line-height:44px;
+		background:$priColor;
+		color:$white;
+		display:block;
+		float:left;
+		margin-right:2px;
+		font-size:18px;
+		font-weight:600;
+		text-align:center;
+	  }
+	}
+  }
+}

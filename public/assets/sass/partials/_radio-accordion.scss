@@ -1,0 +1,21 @@
+.radio-accordion-wrap{
+  font-size:13px;
+  line-height:20px;
+  margin:30px 0;
+  border-top:1px solid $c17;
+  .radio-accordion{
+	border-bottom:1px solid $c17;
+	& > header{
+	  color:$tc-sec;
+	  font-size:14px;
+	  padding:30px 0;
+	 label{
+	   font-size:14px !important;
+	 }
+	}
+	.inner{
+	  padding:0 30px 30px;
+	  display:none;
+	}
+  }
+}

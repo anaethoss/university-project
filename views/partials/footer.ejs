@@ -1,0 +1,143 @@
+<footer class="doc-footer style3">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <h6>Company</h6>
+        <ul>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">Feedback</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <h6>Books</h6>
+        <div class="text-widget">
+          <p>Buy or Sell Used books.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <h6>Information</h6>
+        <ul>
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#">Terms of Service</a>
+          </li>
+          <li>
+            <a href="#">Cookie Policy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="widget-social">
+      <div class="social-links">
+        <ul>
+          <li>
+            <a class="fa fa-facebook" href="#"></a>
+          </li>
+          <li>
+            <a class="fa fa-twitter" href="#"></a>
+          </li>
+          <li>
+            <a class="fa fa-instagram" href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-center">
+      &copy; Book Store
+    </div>
+  </div>
+</footer>
+</div>
+
+<!--======================================
+ Modals
+ =======================================-->
+<div id="signInModal" class="modal-container">
+  <a href="#" class="modal-overlay"> click to close modal</a>
+  <div class="inner">
+    <button class="close_modal">
+      <i class="fa fa-remove"></i>
+    </button>
+
+    <div class="modal-content">
+      <header>
+        <h4>Sign In</h4>
+        <p>Please enter your details below</p>
+      </header>
+      <form action="/signin" method="post">
+        <div class="field-block">
+          <div class="labeled-input">
+            <input placeholder="You Mobile #" type="text">
+          </div>
+        </div>
+        <div class="field-block">
+          <div class="labeled-input">
+            <input placeholder="Password" type="password">
+          </div>
+        </div>
+
+        <button class="btn btn-md btn-green block-element">SignIn Now</button>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="signUpModal" class="modal-container">
+  <a href="#" class="modal-overlay"> click to close modal</a>
+  <div class="inner">
+    <button class="close_modal">
+      <i class="fa fa-remove"></i>
+    </button>
+
+    <div class="modal-content">
+      <header>
+        <h4>Sign Up</h4>
+        <p>Please enter your details below</p>
+      </header>
+      <form action="/signup" method="post">
+        <div class="field-block">
+          <div class="labeled-input">
+            <input placeholder="Your Name" type="text" required>
+          </div>
+        </div>
+        <div class="field-block">
+          <div class="labeled-input">
+            <input type="text" placeholder="Your Mobile #" required>
+          </div>
+        </div>
+
+        <div class="field-block">
+          <div class="labeled-input">
+            <input placeholder="Password" type="password" required>
+          </div>
+        </div>
+
+        <button class="btn btn-md btn-green block-element">Signup Now</button>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!--========================================
+  Javascript
+  ===========================================-->
+<script src="assets/lib/jquery/dist/jquery.min.js"></script>
+<script src="assets/lib/slick-carousel/slick/slick.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

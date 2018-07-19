@@ -1,0 +1,107 @@
+.item-single{
+  position:relative;
+  margin-bottom:100px;
+
+  .item-content{
+    margin-bottom:10px;
+    & > .inner{
+      background:$white;
+      & > header{
+        @media(max-width:992px){
+          padding:60px 20px 20px;
+        }
+        padding:35px 150px 35px 40px;
+
+        position:relative;
+        z-index:99;
+        -webkit-box-shadow:0 1px 0 0 rgba(0, 0, 0, 0.1); -moz-box-shadow:0 1px 0 0 rgba(0, 0, 0, 0.1); box-shadow:0 1px 0 0 rgba(0, 0, 0, 0.1);
+        .info-icons{
+          position:absolute;
+          top:50%;
+          right:40px;
+          margin-top:-15px;
+          @media(max-width:992px){
+            top:20px;
+            right:auto;
+            left:20px;
+            margin-top:0;
+          }
+        }
+        h1{
+          font-size:$h3;
+          margin:0 0 15px;
+        }
+      }
+      .quick-info{
+        padding:45px 40px 35px;
+        font-size:14px;
+        @media(max-width:992px){
+          padding:20px 20px 25px;
+        }
+        ul{
+          margin:-5px;
+          padding:0;
+          li{
+            @media(max-width:992px){
+              float:none;
+              width:100%;
+            }
+            float:left;
+            width:50%;
+            display:block;
+            padding:5px;
+            & > .inner{
+              background:$fvColor;
+              padding:10px 15px;
+              & > span{
+                float:left;
+                width:50%;
+                text-align:right;
+              }
+              span.label{
+                color:$tc-sec;
+                text-align:left;
+              }
+            }
+          }
+        }
+      }
+      .text-widget{
+        @media(max-width:992px){
+          padding:0 20px;
+        }
+        line-height:28px;
+        padding:0 40px 40px;
+        header{
+          padding-bottom:30px;
+          h2,h3,h4{
+            margin:0;
+          }
+        }
+        .inner{
+          padding:0;
+          & > p{
+            margin-top:0;
+            margin-bottom:30px;
+          }
+          & > p:last-child{
+            margin-bottom:0;
+          }
+        }
+      }
+      & > footer{
+        background:$fvColor;
+        font-size:$h6;
+        padding:40px;
+        .fa{
+          color:$priColor;
+        }
+        a{
+          font-weight:600;
+          text-decoration:underline;
+        }
+      }
+    }
+  }
+
+}

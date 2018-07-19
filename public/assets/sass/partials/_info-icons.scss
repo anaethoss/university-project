@@ -1,0 +1,29 @@
+.info-icons{
+  position:relative;
+  margin:0;
+  padding:0;
+  li{
+	position:relative;
+	display:inline-block;
+	a{
+	  text-decoration:none;
+	  display:block;
+	  width:30px;
+	  height:30px;
+	  border-radius:50%;
+	  line-height:30px;
+	  color:$white;
+	  text-align:center;
+	  font-size:11px;
+	  &.fa-envelope{
+		background:$secColor;
+	  }
+	  &.fa-phone{
+		background:$priColor;
+	  }
+	  &.fa-heart{
+		background:$c12;
+	  }
+	}
+  }
+}

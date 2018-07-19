@@ -1,0 +1,27 @@
+.range-widget{
+  position:relative;
+  height:42px;
+  button{
+	background:$priColor;
+	color:$white;
+	position:absolute;
+	right:0;
+	top:0;
+	height:42px;
+	width:19%;
+	border:none;
+  }
+  .range-inputs{
+	width:80%;
+	position:relative;
+	> input{
+	  float:left;
+	  width:49%;
+	  background:$fvColor;
+	  border:none;
+	  & + input{
+		margin-left:2%;
+	  }
+	}
+  }
+}

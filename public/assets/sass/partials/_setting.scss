@@ -1,0 +1,73 @@
+/*some basic settings/configuration for themes i.e assignment of font size to mostly used tags*/
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size:$fs-default;
+  color:$tc-default;
+  font-weight:$fw-default;
+  background:$bg-default;
+}
+img{
+  max-width:100%;
+}
+a{
+  outline:none !important;
+  color:$priColor;
+}
+button{
+  outline:none !important;
+}
+h1,h2,h3,h4,h5,.shortcodes-page h6{
+  margin:15px 0;
+  color:$tc-sec;
+  font-weight:600;
+  .heading &{
+    margin-top:0;
+  }
+}
+h1{
+  font-size:$h1;
+  @media(max-width:1023px){
+    font-size:$h2;
+  }
+  @media(max-width:500px){
+    font-size:$h3;
+  }
+}
+h2{
+  font-size:$h2;
+  @media(max-width:1023px){
+    font-size:$h3;
+  }
+  @media(max-width:500px){
+    font-size:$h4;
+  }
+}
+h3{
+  font-size:$h3;
+  @media(max-width:1023px){
+    font-size:$h4;
+  }
+}
+h4{
+  font-size:$h4;
+  @media(max-width:1023px){
+    font-size:$h5;
+  }
+}
+h5{
+  font-size:$h5;
+}
+h6{
+  font-size:$h6;
+}
+@media (min-width:992px) {
+  .text-right-md{
+    text-align:right;
+  }
+}
+@media (min-width:778px) {
+  .text-right-sm{
+    text-align:right;
+  }
+}

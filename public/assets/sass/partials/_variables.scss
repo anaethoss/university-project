@@ -1,0 +1,76 @@
+/*Abbreviations
+tc => Text Color
+fs => Font size
+fw => Font weight
+pri => Primary
+sec => Secondary
+*/
+/*color Variables */
+$priColor : #0083c9;
+$secColor : #77c04b;
+$terColor : #e0e0e0;
+$frColor : #b7b7b7;
+$fvColor : #f4f4f4;
+$tc-default : #686868;
+$tc-sec : #151515;
+$bg-default : #dfdfdf;
+$white : #ffffff;
+$c1 : #4693d3;
+$c2 : #db6989;
+$c3 : #ffaf02;
+$c4 : #bd967a;
+$c5 : #00a8c6;
+$c6 : #77c04b;
+$c7 : #ff7200;
+$c8 : #767690;
+$c9 : #9db10b;
+$c10 : #a868c2;
+$c11 : #f465af;
+$c12 : #f95858;
+$c13 : #d2d2d2;
+$c14 : #bdbdbd;
+$c15 : #c8c8c8;
+$c16 : #909090;
+$c17 : #e5e5e5;
+$c18 : #f3fbff;
+$c19 : #dbdbdb;
+$c20 : #ffeded;
+$c21 : #f3ffec;
+$c22 : #f4f4f4;
+$c23 : #ebebeb;
+$c24 : #71718a;
+$c25 : #f1f1f1;
+$black : #000;
+$black-80 : rgba(0,0,0,0.8);
+$white-35 : rgba(255,255,255,0.35);
+$black2-50 : rgba(21,21,21,0.50);
+$pri-70 : rgba(0,131,202,0.70);
+$fb-bg : #3b579d;
+$twitter-bg : #2caae1;
+$gplus-bg : #dd4d40;
+$insta-bg : #509dae;
+$linkedin-bg : #0077b5;
+$dribbble-bg : #ec3895;
+
+
+/*Path Variables*/
+$appImages : "../img";
+$bootstrap-path :"../lib/bootstrap-sass/assets/stylesheets";
+
+/*Typography*/
+$fw-default : 400;
+$fs-default : 15px;
+$fs-md : 36px;
+$fs-small : 12px;
+$h1 : 40px;
+$h2 : 30px;
+$h3 : 24px;
+$h4 : 20px;
+$h5 : 16px;
+$h6 : 14px;
+
+
+/*General*/
+$h40 : 40px;
+$h36 : 36px;
+$w1 : 280px;

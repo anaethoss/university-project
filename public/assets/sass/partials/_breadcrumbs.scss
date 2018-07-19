@@ -1,0 +1,50 @@
+.breadcrumb{
+  font-size:12px;
+  margin-bottom:25px;
+  ul,ol{
+	margin:0;
+	padding:0;
+	li{
+	  display:inline-block;
+	  text-transform:capitalize;
+	  & + li:before{
+		content:"\f101";
+		font-family:"FontAwesome";
+		width:24px;
+		text-align:center;
+		display:inline-block;
+	  }
+
+	  a{
+		color:inherit;
+	  }
+	  span{
+		@media (max-width:992px) {
+		  display:inline-block;
+		  margin-top:5px;
+		}
+		background:$white;
+		padding:8px 30px 8px 15px;
+		margin-right:4px;
+		position:relative;
+		a{
+		  position:absolute;
+		  right:0;
+		  width:30px;
+		  text-align:center;
+		  height:100%;
+		  top:0;
+		  i{
+			position:absolute;
+			width:100%;
+			top:50%;
+			left:0;
+			line-height:0;
+			color:$frColor;
+			font-size:10px;
+		  }
+		}
+	  }
+	}
+  }
+}

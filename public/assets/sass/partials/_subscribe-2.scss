@@ -1,0 +1,20 @@
+.widget-subscribe-2{
+  position:relative;
+  .labeled-input{
+	width:100%;
+	input[type="email"]{
+	  max-width:none;
+	  height:54px;
+	}
+	label{
+	  line-height:52px;
+	}
+  }
+  button{
+	top:4px;
+	right:4px;
+	bottom:4px;
+	padding:5px 20px;
+	position:absolute;
+  }
+}

@@ -1,0 +1,13 @@
+a.view-item,.contact-options li a,.listing-actions a,.listing-actions .fa,
+.listing-actions ul,.cat-boxes .cat-box .inner,.filter-options-widget a,
+.social-links li a,.btn,.nt-tab-triggers li span,.panel-actions a,.about-member,
+.category-search-tabbed a,.location-box div:before,.widget-icon,.slick-arrow,.mobile-menu-wrap{
+  @include transition(all,0.2s,ease-in);
+}
+.progress-line > div,.category-list a,.category-list ul,.remove-cart-item,.cart-unit,.shop-product,.modal-container,.mobile-menu,
+.slide-nav-list ul ul,.slide-nav-list,.sliding-nav{
+  @include transition(all,0.3s,ease-in);
+}
+.social-links,.pricing table,.pricing .btn,.full-width-gallery,.demoSlide .demoSlideInner{
+  @include transition(all,0.4s,ease-in);
+}

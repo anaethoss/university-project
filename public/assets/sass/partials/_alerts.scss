@@ -1,0 +1,41 @@
+.alert{
+  position:relative;
+  padding:20px;
+  line-height:normal;
+  background:#f4f4f4;
+  font-size:13px;
+  font-weight:600;
+  margin:10px 0;
+  > .dismiss-alert{
+	font-size:10px;
+	position:absolute;
+	top:0;
+	right:0;
+	width:25px;
+	height:25px;
+	border:none;
+	background:none;
+	color:#bbbbbb;
+  }
+  &.alert-error,&.alert-info,&.alert-warning,&.alert-success,&.alert-notification{
+	color:#fff;
+	> .dismiss-alert{
+	  color:inherit;
+	}
+  }
+  &.alert-error{
+	background:#db6989;
+  }
+  &.alert-info{
+	background:#00a8c6;
+  }
+  &.alert-warning{
+	background:#ffaf02;
+  }
+  &.alert-success{
+	background:#77c04b;
+  }
+  &.alert-notification{
+	background:#a868c2;
+  }
+}
