@@ -1,0 +1,54 @@
+<% include partials/header %>
+
+
+  <div class="app-canvas">
+    <div class="container">
+      <div class="breadcrumb">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>Signin</li>
+        </ul>
+      </div>
+
+      <div class="page contextual-page">
+        <div class="inner">
+
+          <header class="page-header text-center">
+            <h3>Signin to your account</h3>
+          </header>
+
+          <div class="row pt-50 pb-60">
+
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+
+              <div class="account-access-option">
+
+                <form action="/signin" method="post" id="signInForm">
+                  <div class="field-block">
+                    <div class="labeled-input">
+                      <label>Username</label>
+                      <input id="si_username" title="Enter username" minlength="3" name="si_username" type="text">
+                    </div>
+                  </div>
+                  <div class="field-block">
+                    <div class="labeled-input">
+                      <label>Password</label>
+                      <input id="si_password" title="Enter Password" name="si_password" type="password">
+                    </div>
+                  </div>
+
+                  <button class="btn btn-md btn-green block-element">Signin Now</button>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <% include partials/footer %>

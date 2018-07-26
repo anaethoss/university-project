@@ -1,19 +1,15 @@
-var createError = require("http-errors");
-var express = require("express");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-// var logger = require('morgan');
-
-var indexRouter = require("./routes/index");
-var recentRouter = require("./routes/recent");
-var signinRouter = require("./routes/signin");
-var signupRouter = require("./routes/signup");
-var chatRouter = require("./routes/chat");
-var categoriesRouter = require("./routes/categories");
-var singleBookRouter = require("./routes/single-book");
-var createRouter = require("./routes/create");
-
-var app = express();
+const express = require("express");
+const mongoose = require("mongoose");
+const path = require("path");
+const cookieParser = require("cookie-parser");
+const bodyParser = require("body-parser");
+const passport = require("passport");
+const promisify = require("es6-promisify");
+const flash = require("connect-flash");
+const expressValidator = require("express-validator");
+const LocalStrategy = require("passport-local").Strategy;
+const routes = require("./routes/index");
+const app = express();
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -23,16 +19,14 @@ app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/", indexRouter);
-app.use("/recent", recentRouter);
-app.use("/categories", categoriesRouter);
-app.use("/signin", signinRouter);
-app.use("/signup", signupRouter);
-app.use("/chat", chatRouter);
-app.use("/single-book", singleBookRouter);
-app.use("/create", createRouter);
+app.use(expressValidator());
+
+app.use(flash());
+
+app.use("/", routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
