@@ -21,54 +21,27 @@
           <form action="/create" method="post">
             <div class="elements-block">
               <div class="inner">
+
                 <div class="row field-block">
                   <div class="col-xs-12 col-md-3">
                     <label class="required" for="create001">Ad Title</label>
                   </div>
                   <div class="col-xs-12 col-md-9">
-                    <input type="text" id="create001" placeholder="e.g. Simple Book title">
+                    <input type="text" id="create001" name="title" placeholder="e.g. Simple Book title">
                   </div>
                 </div>
 
 
                 <div class="row field-block">
                   <div class="col-xs-12 col-md-3">
-                    <span class="required label">Category</span>
+                    <label class="required" for="create0001">Category</label>
                   </div>
                   <div class="col-xs-12 col-md-9">
-                    <div class="radio-dropdown">
-                      <i class="fa fa-bars"></i>
-                      <button>Select Category</button>
-                      <ul>
-                        <li class="custom-radio">
-                          <input name="item-category" type="radio" id="create002">
-                          <label for="create002">Science</label>
-                        </li>
-
-                        <li class="custom-radio">
-                          <input name="item-category" type="radio" id="create002">
-                          <label for="create002">History</label>
-                        </li>
-
-                        <li class="custom-radio">
-                          <input name="item-category" type="radio" id="create002">
-                          <label for="create002">Math</label>
-                        </li>
-
-                        <li class="custom-radio">
-                          <input name="item-category" type="radio" id="create002">
-                          <label for="create002">Journals</label>
-                        </li>
-
-                        <li class="custom-radio">
-                          <input name="item-category" type="radio" id="create002">
-                          <label for="create002">Biographies</label>
-                        </li>
-
-                      </ul>
-                    </div>
+                    <input type="text" id="create0001" name="category" placeholder="e.g. Science">
                   </div>
                 </div>
+
+
 
                 <div class="row field-block">
                   <div class="col-xs-12 col-md-3">
@@ -77,8 +50,17 @@
                   <div class="col-xs-12 col-md-9">
                     <div class="icon-field">
                       <span>৳</span>
-                      <input type="text" id="create011" placeholder="e.g. 999">
+                      <input type="text" id="create011" placeholder="e.g. 999" name="price">
                     </div>
+                  </div>
+                </div>
+
+                <div class="row field-block">
+                  <div class="col-xs-12 col-md-3">
+                    <label class="required" for="create401">Book Photos</label>
+                  </div>
+                  <div class="col-xs-12 col-md-9">
+                    <input class="input-sm" type="file" id="create4011" name="photo">
                   </div>
                 </div>
 
@@ -88,47 +70,7 @@
                     <label class="required" for="create201">Ad Description</label>
                   </div>
                   <div class="col-xs-12 col-md-9">
-                    <textarea id="create201" placeholder="Enter your book Description & selling Description here"></textarea>
-                  </div>
-                </div>
-
-                <div class="row field-block">
-                  <div class="col-xs-12 col-md-3">
-                    <label class="required" for="create401">Book Photos</label>
-                  </div>
-                  <div class="col-xs-12 col-md-9">
-                    <input class="input-sm" type="file" id="create4011">
-                  </div>
-                </div>
-
-
-                <div class="row field-block">
-                  <div class="col-xs-12 col-md-3">
-                    <label class="required" for="create401">Your Name</label>
-                  </div>
-                  <div class="col-xs-12 col-md-9">
-                    <input class="input-sm" type="text" id="create401" placeholder="e.g. Jhone Doe">
-                  </div>
-                </div>
-
-                <div class="row field-block">
-                  <div class="col-xs-12 col-md-3">
-                    <label for="create501">Your email</label>
-                  </div>
-                  <div class="col-xs-12 col-md-9">
-                    <input class="input-sm" type="email" id="create501" placeholder="e.g. jon@got.com">
-                  </div>
-                </div>
-
-                <div class="row field-block">
-                  <div class="col-xs-12 col-md-3">
-                    <label for="create451">Phone number</label>
-                  </div>
-                  <div class="col-xs-12 col-md-9">
-                    <div class="icon-field">
-                      <span>+880</span>
-                      <input class="input-sm" type="tel" id="create451" placeholder="e.g. 123456789">
-                    </div>
+                    <textarea id="create201" name="description" placeholder="Enter your book Description & selling Description here"></textarea>
                   </div>
                 </div>
 
@@ -137,7 +79,7 @@
             <div class="elements-block style-gray">
               <div class="inner">
                 <div>
-                  <a class="btn btn-green btn-md" href="#">Create ad</a>&emsp;&emsp;
+                  <button type="submit" class="btn btn-green btn-md">Post Book</button>&emsp;&emsp;
                   <span class="termStatement">
                     By clicking 'Create Ad' you agree to
                     <a class="link" href="#">our Terms & Condition</a> and

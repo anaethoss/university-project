@@ -28,39 +28,35 @@
                   <div class="field-block">
                     <div class="labeled-input">
                       <label>Name *</label>
-                      <input id="su_name" title="Your Name" name="su_name" minlength="3" type="text">
+                      <input id="su_name" title="Your Name" name="su_name" minlength="3" type="text" required>
                     </div>
                   </div>
                   <div class="field-block">
                     <div class="labeled-input">
                       <label>Username*</label>
-                      <input id="su_username" title="choose a username" minlength="3" name="su_username" type="text">
+                      <input id="su_username" title="choose a username" minlength="3" name="username" type="text" required>
                     </div>
                   </div>
                   <div class="field-block">
                     <div class="labeled-input">
                       <label>Email*</label>
-                      <input id="su_email" title="Enter your email" name="su_email" type="email">
+                      <input id="su_email" title="Enter your email" name="su_email" type="email" required>
                     </div>
                   </div>
                   <div class="field-block">
                     <div class="icon-field wide-element">
-                      <span>+880</span>
-                      <input id="su_mobileNumber" type="tel" name="su_mobileNumber" placeholder="e.g. 01712345678">
+                      <span>+88</span>
+                      <input id="su_mobileNumber" type="tel" name="su_mobileNumber" placeholder="e.g. 1712345678" pattern=".{11,11}" maxlength="11"
+                        title="Please Enter a valid Number">
                     </div>
                   </div>
                   <div class="field-block">
                     <div class="labeled-input">
                       <label>Password*</label>
-                      <input id="su_password" title="Password" name="su_password" type="password">
+                      <input id="su_password" title="Password" name="password" type="password" required>
                     </div>
                   </div>
-                  <div class="field-block">
-                    <div class="labeled-input">
-                      <label>Confirm Password</label>
-                      <input id="su_confirm_password" title="Confirm Password" name="su_confirm_password" type="password">
-                    </div>
-                  </div>
+
                   <button class="btn btn-md btn-green block-element">Signup Now</button>
 
                 </form>

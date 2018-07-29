@@ -30,6 +30,7 @@
 </head>
 
 <body>
+
   <div class="web-app">
     <div class="doc-header style3">
       <div class="container">
@@ -45,17 +46,22 @@
           <div class="clearfix">
             <ul>
               <li>
-                <a href="/">Home</a>
+                <a href="/">
+                  <i class="fa fa-home"></i> Home
+                </a>
               </li>
 
               <li>
-                <a href="/recent">All Books</a>
+                <a href="/recent">
+                  <i class="fa fa-list"></i> All Books</a>
               </li>
 
               <li class="dropdown-wrap">
-                <a href="#">Categories</a>
+                <a href="#">
+                  <i class="fa fa-tags"></i> Categories</a>
                 <div class="basic-dropdown">
                   <ul class="country-list">
+
                     <li>
                       <a href="/categories/science">Science</a>
                     </li>
@@ -71,22 +77,40 @@
                     <li>
                       <a href="/categories/biographies">Biographies</a>
                     </li>
+
+
                   </ul>
                 </div>
               </li>
-              <li>
-                <a href="/create">Create Ad</a>
-              </li>
-              <li>
-                <a href="/logout">Logout</a>
-              </li>
-
-              <li>
-                <a href="/signin">SignIn</a>
-              </li>
-              <li>
-                <a href="/signup">SignUp</a>
-              </li>
+              <% if(currentUser) { %>
+                <li class="dropdown-wrap">
+                  <a href="#">
+                    <i class="fa fa-user"></i>
+                    <%= currentUser.name %>
+                  </a>
+                  <div class="basic-dropdown">
+                    <ul class="country-list">
+                      <li>
+                        <a href="/create">
+                          <i class="fa fa-plus"></i> Post Book ad</a>
+                      </li>
+                      <li>
+                        <a href="/logout">
+                          <i class="fa fa-sign-out"></i> Logout</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <% } else if(!currentUser) { %>
+                  <li>
+                    <a href="/signin">
+                      <i class="fa fa-sign-in"></i> SignIn</a>
+                  </li>
+                  <li>
+                    <a href="/signup">
+                      <i class="fa fa-user-plus"></i> SignUp</a>
+                  </li>
+                  <% } %>
             </ul>
           </div>
         </div>

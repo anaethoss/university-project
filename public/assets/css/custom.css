@@ -1,13 +1,22 @@
 .doc-header.style3 .container > .inner > .clearfix > ul > li.dropdown-wrap > a {
 
-    width: auto; 
-     background: none; 
-    font-size: 12px; 
-     padding: 25px 15px; 
+    width: auto;
+     background: none;
+    font-size: 12px;
+     padding: 25px 15px;
     height: auto;
 }
 
 
 .item-spot .breadcrumb ul li + li:before {
     content: " | ";
+}
+
+.doc-header.style3 .container > .inner > .clearfix > ul > li.dropdown-wrap > a > i {
+    position: static;
+    line-height: 0;
+    top: initial;
+    left: initial;
+    width: auto;
+    text-align: left;
 }

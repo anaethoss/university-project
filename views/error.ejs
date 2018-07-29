@@ -1,3 +1,33 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<% include partials/header %>
+
+  <div class="app-canvas">
+    <div class="container">
+      <div class="breadcrumb">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>404</li>
+        </ul>
+      </div>
+
+      <div class="page contextual-page">
+        <div class="inner">
+
+          <header class="page-header text-center">
+            <h3>Page not found</h3>
+          </header>
+
+          <div class="row pt-50 pb-60">
+            <h2 class="text-center">
+              <!-- <% //if(status) { %>
+                <%= //status %>
+                  <% //} %> -->
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <% include partials/footer %>
