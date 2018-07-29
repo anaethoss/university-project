@@ -1,7 +1,7 @@
 <% include partials/header %>
 
   <div class="main-banner imgAsBg hero-banner">
-    <img src="assets/img/banner.jpg" alt="dummy">
+    <img style="display: none;" src="/assets/img/banner.jpg" alt="dummy">
     <div class="inner">
       <div class="container">
         <header>
@@ -11,10 +11,12 @@
         <div class="category-search-tabbed">
 
           <div class="search-widget">
-            <input type="text" placeholder="Search your book here">
-            <button type="submit">
-              <i class="fa fa-search"></i>
-            </button>
+            <form action="/search" method="get" style="display: inline;">
+              <input name="searchBook" type="text" placeholder="Search your book here">
+              <button type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -28,45 +30,26 @@
       </header>
 
       <div class="featured-items row">
-
-        <div class="col-xs-12 col-sm-4">
-          <div class="item-thumb">
-            <img src="http://placehold.it/340x240" alt="">
-            <h3>Some fancy title here</h3>
-            <div class="basic-info">
-              <span>
-                <sup>৳</sup>201.06</span>
-              <span class="cat bg1">Mobiles</span>
+        <% for(let i = 0; i < 3; i++) { %>
+          <div class="col-xs-12 col-sm-4">
+            <div class="item-thumb">
+              <img src="/<%= allCat[i].photo %>" alt="">
+              <h3>
+                <%= allCat[i].title %>
+              </h3>
+              <div class="basic-info">
+                <span>
+                  <sup>৳</sup>
+                  <%= allCat[i].price %>
+                </span>
+                <span class="cat bg1">
+                  <%= allCat[i].category %>
+                </span>
+              </div>
+              <a href="/single-book/<%= allCat[i]._id %>">Open details</a>
             </div>
-            <a href="/single-book">Open details</a>
           </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4">
-          <div class="item-thumb">
-            <img src="http://placehold.it/340x240" alt="">
-            <h3>Some fancy title here</h3>
-            <div class="basic-info">
-              <span>
-                <sup>৳</sup>201.06</span>
-              <span class="cat bg1">Mobiles</span>
-            </div>
-            <a href="/single-book">Open details</a>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4">
-          <div class="item-thumb">
-            <img src="http://placehold.it/340x240" alt="">
-            <h3>Some fancy title here</h3>
-            <div class="basic-info">
-              <span>
-                <sup>৳</sup>201.06</span>
-              <span class="cat bg1">Mobiles</span>
-            </div>
-            <a href="/single-book">Open details</a>
-          </div>
-        </div>
+          <% }; %>
 
       </div>
   </section>

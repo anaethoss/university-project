@@ -17,14 +17,14 @@
     CSS
     ===========================================-->
   <!--3rd party plugins-->
-  <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="assets/lib/slick-carousel/slick/slick.css" rel="stylesheet" type="text/css">
+  <link href="/assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="/assets/lib/slick-carousel/slick/slick.css" rel="stylesheet" type="text/css">
   <!--custom icons for classified website-->
-  <link href="assets/css/adspoticons.css" rel="stylesheet" type="text/css">
+  <link href="/assets/css/adspoticons.css" rel="stylesheet" type="text/css">
   <!--main styles for template-->
-  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
   <!--put your custom css on the file below-->
-  <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+  <link href="/assets/css/custom.css" rel="stylesheet" type="text/css">
 
 
 </head>
@@ -40,7 +40,7 @@
               <i class="adicon-hamburger"></i>
             </button>
             <a href="/">
-              <img src="assets/img/logo.png" alt="book-store">
+              <img src="/assets/img/logo.png" alt="book-store">
             </a>
           </div>
           <div class="clearfix">
@@ -61,24 +61,13 @@
                   <i class="fa fa-tags"></i> Categories</a>
                 <div class="basic-dropdown">
                   <ul class="country-list">
-
-                    <li>
-                      <a href="/categories/science">Science</a>
-                    </li>
-                    <li>
-                      <a href="/categories/history">History</a>
-                    </li>
-                    <li>
-                      <a href="/categories/math">Math</a>
-                    </li>
-                    <li>
-                      <a href="/categories/journals">Journals</a>
-                    </li>
-                    <li>
-                      <a href="/categories/biographies">Biographies</a>
-                    </li>
-
-
+                    <% allCat.forEach(cat => { %>
+                      <li>
+                        <a href="/categories/<%= cat.category.toLowerCase() %>">
+                          <%= cat.category %>
+                        </a>
+                      </li>
+                      <% }); %>
                   </ul>
                 </div>
               </li>

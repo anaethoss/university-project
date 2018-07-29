@@ -1,22 +1,44 @@
 .doc-header.style3 .container > .inner > .clearfix > ul > li.dropdown-wrap > a {
-
-    width: auto;
-     background: none;
-    font-size: 12px;
-     padding: 25px 15px;
-    height: auto;
+  width: auto;
+  background: none;
+  font-size: 12px;
+  padding: 25px 15px;
+  height: auto;
 }
-
 
 .item-spot .breadcrumb ul li + li:before {
-    content: " | ";
+  content: " | ";
 }
 
-.doc-header.style3 .container > .inner > .clearfix > ul > li.dropdown-wrap > a > i {
-    position: static;
-    line-height: 0;
-    top: initial;
-    left: initial;
-    width: auto;
-    text-align: left;
+.doc-header.style3
+  .container
+  > .inner
+  > .clearfix
+  > ul
+  > li.dropdown-wrap
+  > a
+  > i {
+  position: static;
+  line-height: 0;
+  top: initial;
+  left: initial;
+  width: auto;
+  text-align: left;
+}
+
+.imgAsBg {
+  overflow: hidden;
+}
+
+.imgAsBg > img {
+  height: 100%;
+  display: block;
+}
+
+.featured-items .item-thumb {
+  background: #f4f4f4;
+}
+.featured-items .item-thumb img {
+  width: 340px;
+  height: 250px;
 }

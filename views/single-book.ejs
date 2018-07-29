@@ -1,4 +1,5 @@
 <% include partials/header %>
+
   <div class="app-canvas">
     <div class="container">
       <div class="breadcrumb">
@@ -7,11 +8,13 @@
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/categories/science">Science</a>
+            <a href="/categories/science">
+              <%= book.category %>
+            </a>
           </li>
 
           <li>
-            Book title goes here
+            <%= book.title %>
           </li>
         </ul>
       </div>
@@ -22,12 +25,18 @@
 
           <article class="inner">
             <header>
-              <h1>Book title goes here</h1>
+              <h1>
+                <%= book.title %>
+              </h1>
               <ul class="info-list">
                 <li>
-                  <i class="fa fa-bookmark"></i>ID: 13030978</li>
+                  <i class="fa fa-bookmark"></i>ID:
+                  <%= book._id %>
+                </li>
                 <li>
-                  <i class="fa fa-clock-o"></i>2:49 pm</li>
+                  <i class="fa fa-clock-o"></i>
+                  <%= book.createdAt.toDateString() %>
+                </li>
               </ul>
             </header>
 
@@ -40,39 +49,12 @@
                   data-auto="true">
 
                   <div class="item-lg-thumb imgAsBg">
-                    <img src="http://placehold.it/1024x768" alt="">
+                    <img src="/<%= book.photo %>" alt="">
                   </div>
-
-                  <div class="item-lg-thumb imgAsBg">
-                    <img src="http://placehold.it/1024x768" alt="">
-                  </div>
-
 
                 </div>
               </div>
 
-
-
-              <div class="item-sm-images">
-                <div class="slick-carousel slick-sm-images" data-focus="true" data-asnav=".slick-lg-images" data-slides-scroll="1" data-dots="false"
-                  data-nav="true" data-prev="fa fa-chevron-left" data-next="fa fa-chevron-right" data-slides="6" data-slides-lg="4"
-                  data-slides-md="4" data-slides-sm="2" data-loop="true" data-auto="false">
-
-                  <div class="item-sm-thumb">
-                    <div class="imgAsBg">
-                      <img src="http://placehold.it/1024x768" alt="dummy">
-                    </div>
-                  </div>
-
-                  <div class="item-sm-thumb">
-                    <div class="imgAsBg">
-                      <img src="http://placehold.it/1024x768" alt="dummy">
-                    </div>
-                  </div>
-
-
-                </div>
-              </div>
             </div>
 
 
@@ -82,14 +64,18 @@
                 <li>
                   <div class="inner clearfix">
                     <span class="label">Category Name: </span>
-                    <span class="desc">Science</span>
+                    <span class="desc">
+                      <%= book.category %>
+                    </span>
                   </div>
                 </li>
 
                 <li>
                   <div class="inner clearfix">
                     <span class="label">Tags: </span>
-                    <span class="desc">Science book, Science</span>
+                    <span class="desc">
+                      <%= book.category %>
+                    </span>
                   </div>
                 </li>
 
@@ -101,12 +87,9 @@
                 <h4>Book Description</h4>
               </header>
               <div class="inner">
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Chasellus porttitor non lectus ut lacinia ras in
-                  metus est. Proin non orci massa roin auctor ultricies mauris nec tincidunt mi imperdiet pendisse id tempor
-                  nisi nec laoreet lorem tiam congue tempus convallis.</p>
-
-                <p>Proin non orci massa roin auctor ultricies mauris nec tincidunt mi imperdiet uspendisse id tempor nisi nec
-                  laoreet lorem tiam congue tempus convallis.</p>
+                <p>
+                  <%= book.description %>
+                </p>
               </div>
             </div>
 
@@ -114,11 +97,11 @@
               <div class="inner row">
                 <div class="col-xs-12 col-md-4">
                   <span class="item-views">
-                    <i class="fa fa-eye"></i> Total Views: 5555</span>
+                    <i class="fa fa-eye"></i> Total Views: 0000</span>
                 </div>
                 <div class="col-xs-12 col-md-8 text-right-md">
                   Do you have Books to sell?
-                  <a class="modal-trigger" href="#signUpModal">Sign Up and Post Your Ad</a>
+                  <a href="/signup">Sign Up and Post Your Ad</a>
                 </div>
 
 
@@ -133,14 +116,18 @@
           <div class="inner">
             <div class="price-widget short-widget">
               <i class="adicon-dollar"></i>
-              <strong>৳235.00</strong>
+              <strong>৳
+                <%= book.price + ".00" %>
+              </strong>
               <span>Negotiable Price</span>
             </div>
 
             <div class="user-widget text-center">
-              <img src="assets/img/basic/user-thumb.png" alt="asd">
+              <img src="/assets/img/basic/user-thumb.png" alt="asd">
               <h4>
-                <a href="#">Anaet Hossain</a>
+                <a href="#">
+                  <%= book.author.name %>
+                </a>
               </h4>
               <div>Member Since 2013</div>
               <a href="#" class="link">More Books</a>
